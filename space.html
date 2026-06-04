@@ -1,30 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Space</title>
-    <style>
-        *{
-              background-image: linear-gradient(to right, purple,orange);
-        }
-        
-   .dos{
-    background-image: linear-gradient(to right, rgb(9, 0, 128),rgb(0, 200, 255));
-
-    
-   }
-
-   .dog{
-    background-image: linear-gradient(to left, pink, grey);
-   }
-    </style>
+  <title>My Space Page</title>
+<link rel="stylesheet" href="style.css">
+    body {
+      background-color: darkblue;
+      background-image: linear-gradient(to bottom, darkblue, navy);
+      background-repeat: no-repeat;
+      background-position: top center;
+      font-family: Arial, sans-serif;
+    }
+ 
+    .page-header {
+      background-image: ;
+      border-radius: 16px;
+      text-align: center;
+      color: white;
+    }
+ 
+    .fact-card {
+      background-color: midnightblue;
+      border-radius: 12px;
+      color: white;
+    }
+ 
+    .fact-card h2 {
+      color: coral;
+    }
+ 
+    .star {
+      width: 60px;
+      height: 60px;
+      background-color: yellow;
+      border-radius: 50%;
+      animation: twinkle 2s infinite alternate;
+    }
+ 
+    @keyframes twinkle {
+      from { background-color: yellow; }
+      to   { background-color: white; }
+    }
+ 
+    .footer-text {
+      text-align: center;
+      color: coral;
+    }
 </head>
 <body>
-    <center><h1 class="dog">Space</h1></center> 
-    <p class="dos">
-        Space is vast.
-    </p>
-    
+
+  <div class="page-header">
+    <h1>My Space Page</h1>
+    <p>Welcome to my corner of the galaxy!</p>
+  </div>
+
+  <div class="fact-card">
+    <h2>Fun Space Fact</h2>
+    <p>The Sun is so big that one million Earths could fit inside it.</p>
+  </div>
+
+  <div class="star"></div>
+
+  <p class="footer-text">Made by ___________</p>
+
 </body>
 </html>
